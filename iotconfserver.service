@@ -1,0 +1,13 @@
+[Unit]
+Description=IoT confserver
+After=network.target
+
+[Service]
+Environment=NODE_PORT=1111
+Type=simple
+User=iotconfserver
+ExecStart=/usr/bin/node /srv/iotconfserver/confserver.js
+Restart=on-failure
+
+[Install]
+WantedBy=multi-user.target

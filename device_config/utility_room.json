@@ -1,0 +1,86 @@
+{
+    "hostname": "utility_room",
+    "type": "light",
+    "heartbeat": 10000,
+    "broker": "10.5.5.1",
+    "i2c": {
+	"scl": 4,
+	"sda": 5,
+	"freq": 400000
+    },
+    "pwm_freq": 1526,
+    "channels": {
+        "guest_bathroom/ceiling": {
+	    "type": "light-w",
+	    "dimmer": "0x40",
+            "leds": [0, 1, 2, 3, 4, 5],
+	    "hass_info": {
+                "state": "OFF",
+                "transition": 2,
+                "effect": "none",
+                "brightness": 255
+            }
+        },
+        "guest_bathroom/mirror": {
+            "type": "light-w",
+            "dimmer": "0x40",
+            "leds": [10],
+            "hass_info": {
+                "state": "OFF",
+                "transition": 2,
+                "effect": "none",
+                "brightness": 255
+            }
+        },
+        "guest_bathroom/recess": {
+            "type": "light-w",
+            "dimmer": "0x40",
+            "leds": [8, 9],
+            "hass_info": {
+                "state": "OFF",
+                "transition": 2,
+                "effect": "none",
+                "brightness": 255
+            }
+        },
+        "guest_bathroom/skylight": {
+            "type": "light-w",
+            "dimmer": "0x40",
+            "leds": [11],
+            "hass_info": {
+                "state": "OFF",
+                "transition": 2,
+                "effect": "none",
+                "brightness": 255
+            }
+        },
+        "upper_hallway/corner": {
+            "type": "light-rgbw",
+            "dimmer": "0x40",
+            "leds": [15, 14, 13, 12],
+            "hass_info": {
+                "state": "OFF",
+                "transition": 2,
+                "effect": "none",
+                "brightness": 255,
+                "white_value": 255,
+                "color": {
+                    "r": 255,
+                    "g": 255,
+                    "b": 255
+                }
+            }
+        },
+        "utility/ceiling": {
+	    "type": "light-w",
+	    "dimmer": "0x40",
+            "leds": [7],
+	    "hass_info": {
+                "state": "OFF",
+                "transition": 2,
+                "effect": "none",
+                "brightness": 255
+            }
+        }
+    }
+}

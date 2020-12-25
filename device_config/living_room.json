@@ -1,0 +1,26 @@
+{
+    "hostname": "living_room",
+    "type": "light",
+    "heartbeat": 10000,
+    "broker": "10.5.5.1",
+    "i2c": {
+	"scl": 4,
+	"sda": 5,
+	"freq": 400000
+    },
+    "pwm_freq": 1526,
+    "channels": {
+        "living/ceiling_east": {
+	    "type": "light-w",
+	    "dimmer": "0x40",
+            "leds": [0, 1, 2, 3, 4, 5],
+	    "range": [255, 160],
+	    "hass_info": {
+		"state": "OFF",
+		"transition": 2,
+		"effect": "none",
+		"brightness": 255
+	    }
+        }
+    }
+}

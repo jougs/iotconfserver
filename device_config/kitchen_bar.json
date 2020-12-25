@@ -1,0 +1,47 @@
+{
+    "hostname": "kitchen_bar",
+    "type": "light",
+    "heartbeat": 10000,
+    "broker": "10.5.5.1",
+    "i2c": {
+	"scl": 4,
+	"sda": 5,
+	"freq": 400000
+    },
+    "pwm_freq": 1000,
+    "channels": {
+        "kitchen/cabinet_passage": {
+	    "type": "light-w",
+	    "dimmer": "0x40",
+            "leds": [0],
+	    "hass_info": {
+		"state": "OFF",
+		"transition": 2,
+		"effect": "none",
+		"brightness": 255
+	    }
+        },
+        "kitchen/below_bar": {
+	    "type": "light-w",
+	    "dimmer": "0x40",
+            "leds": [1],
+	    "hass_info": {
+		"state": "OFF",
+		"transition": 2,
+		"effect": "none",
+		"brightness": 255
+	    }
+        },
+        "dining/below_bar": {
+	    "type": "light-w",
+	    "dimmer": "0x40",
+            "leds": [2],
+	    "hass_info": {
+		"state": "OFF",
+		"transition": 2,
+		"effect": "none",
+		"brightness": 255
+	    }
+        }
+    }
+}

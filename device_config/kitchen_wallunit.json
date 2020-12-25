@@ -1,0 +1,57 @@
+{
+    "hostname": "kitchen_wallunit",
+    "type": "light",
+    "heartbeat": 10000,
+    "broker": "10.5.5.1",
+    "pwm_freq": 1000,
+    "channels": {
+        "downlight": {
+            "room": "kitchen",
+	    "type": "light-w",
+	    "dimmer": "pwm",
+            "leds": [12],
+	    "hass_info": {
+		"state": "OFF",
+		"transition": 2,
+		"effect": "none",
+		"brightness": 255
+	    }
+        },
+        "stovetop": {
+            "room": "kitchen",
+	    "type": "light-w",
+	    "dimmer": "pwm",
+            "leds": [13],
+	    "hass_info": {
+		"state": "OFF",
+		"transition": 2,
+		"effect": "none",
+		"brightness": 255
+	    }
+        },
+        "wallunit_left": {
+            "room": "kitchen",
+	    "type": "light-w",
+	    "dimmer": "pwm",
+            "leds": [5],
+	    "hass_info": {
+		"state": "OFF",
+		"transition": 2,
+		"effect": "none",
+		"brightness": 255
+	    }
+        },
+        "wallunit_right": {
+            "room": "kitchen",
+	    "type": "light-w",
+	    "dimmer": "pwm",
+            "leds": [4],
+	    "hass_info": {
+		"state": "OFF",
+		"transition": 2,
+		"effect": "none",
+		"brightness": 255
+	    }
+        }
+    }
+}

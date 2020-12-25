@@ -1,0 +1,45 @@
+{
+    "hostname": "kitchen_bar",
+    "type": "light",
+    "heartbeat": 10000,
+    "broker": "10.5.5.1",
+    "pwm_freq": 1000,
+    "channels": {
+        "passage": {
+            "room": "kitchen",
+	    "type": "light-w",
+	    "dimmer": "pwm",
+            "leds": [4],
+	    "hass_info": {
+		"state": "OFF",
+		"transition": 2,
+		"effect": "none",
+		"brightness": 255
+	    }
+        },
+        "bar1": {
+            "room": "kitchen",
+	    "type": "light-w",
+	    "dimmer": "pwm",
+            "leds": [5],
+	    "hass_info": {
+		"state": "OFF",
+		"transition": 2,
+		"effect": "none",
+		"brightness": 255
+	    }
+        },
+        "bar2": {
+            "room": "dining",
+	    "type": "light-w",
+	    "dimmer": "pwm",
+            "leds": [12],
+	    "hass_info": {
+		"state": "OFF",
+		"transition": 2,
+		"effect": "none",
+		"brightness": 255
+	    }
+        }
+    }
+}

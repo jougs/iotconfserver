@@ -1,0 +1,38 @@
+{
+    "hostname": "power_room",
+    "type": "light",
+    "heartbeat": 10000,
+    "broker": "10.5.5.1",
+    "i2c": {
+	"scl": 4,
+	"sda": 5,
+	"freq": 400000
+    },
+    "type": "light",
+    "pwm_freq": 1526,
+    "channels": {
+        "bedroom/floor": {
+	    "type": "light-w",
+	    "dimmer": "0x40",
+            "leds": [0, 1, 2, 3, 4],
+	    "range": [0, 127],
+	    "hass_info": {
+		"state": "OFF",
+		"transition": 2,
+		"effect": "none",
+		"brightness": 255
+	    }
+        }
+        "bathroom/throne": {
+	    "type": "light-w",
+	    "dimmer": "0x40",
+            "leds": [12, 13, 14],
+	    "hass_info": {
+		"state": "OFF",
+		"transition": 2,
+		"effect": "none",
+		"brightness": 255
+	    }
+        }
+    }
+}

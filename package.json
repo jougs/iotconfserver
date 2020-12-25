@@ -1,0 +1,15 @@
+{
+  "name": "confserver",
+  "version": "1.0.0",
+  "description": "Server for storing, sending, and displaying device configurations for custom IoT nodes",
+  "main": "confserver.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Jochen Martin Eppler <jougs@gmx.net>",
+  "license": "ISC",
+  "dependencies": {
+    "moment": "^2.24.0",
+    "mqtt": "^3.0.0"
+  }
+}

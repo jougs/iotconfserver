@@ -1,0 +1,47 @@
+{
+    "hostname": "pantry",
+    "type": "light",
+    "heartbeat": 10000,
+    "broker": "10.5.5.1",
+    "i2c": {
+	"scl": 4,
+	"sda": 5,
+	"freq": 400000
+    },
+    "pwm_freq": 1526,
+    "channels": {
+	"pantry/downlight": {
+	    "type": "light-w",
+	    "dimmer": "0x40",
+            "leds": [0, 1],
+	    "hass_info": {
+		"state": "OFF",
+		"transition": 2,
+		"effect": "none",
+		"brightness": 255
+	    }
+        },
+	"pantry/shelflight": {
+	    "type": "light-w",
+	    "dimmer": "0x40",
+            "leds": [2, 3],
+	    "hass_info": {
+		"state": "OFF",
+		"transition": 2,
+		"effect": "none",
+		"brightness": 255
+	    }
+        },
+        "living/fireplace": {
+	    "type": "light-w",
+	    "dimmer": "0x40",
+            "leds": [6, 7],
+	    "hass_info": {
+		"state": "OFF",
+		"transition": 3,
+		"effect": "none",
+		"brightness": 255
+	    }
+        }
+    }
+}

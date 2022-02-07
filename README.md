@@ -34,3 +34,12 @@ The logs of the confserver can be accessed using
 ```
 journalctl -u iotconfserver.service
 ```
+
+#### Updating
+
+```bash
+su -s /bin/bash -c 'cd /srv/iotconfserver && git pull && npm update' iotconfserver
+cp /srv/iotconfserver/iotconfserver.service /lib/systemd/system/
+systemctl daemon-reload
+systemctl restart iotconfserver.service
+```
